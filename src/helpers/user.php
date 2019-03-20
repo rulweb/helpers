@@ -12,7 +12,7 @@ if (!function_exists('is_auth')) {
 
 if (!function_exists('user')) {
     /**
-     * @return \App\Models\User|\Illuminate\Contracts\Auth\Authenticatable|null
+     * @return \App\Models\User|\App\User|\Illuminate\Contracts\Auth\Authenticatable|null
      */
     function user()
     {
