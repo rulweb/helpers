@@ -1,16 +1,18 @@
 <?php
 
 
+use Carbon\Carbon;
+
 if (!function_exists('dateFormat')) {
     function dateFormat($format, $date)
     {
         if ($date === false) {
             $date = time();
         }
-        if ($date instanceof \Carbon\Carbon) {
+        if ($date instanceof Carbon) {
             $date = $date->getTimestamp();
         }
-        if ($date instanceof \Carbon\Carbon) {
+        if ($date instanceof Carbon) {
             $date = $date->getTimestamp();
         }
         if ($format === '') {

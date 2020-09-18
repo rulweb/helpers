@@ -1,5 +1,5 @@
 {
-    "name": "rulweb/helpers",
+    "name": "rulweb/laravel-helpers",
     "description": "Хелперы для Laravel Framework",
     "license": "MIT",
     "authors": [
@@ -9,14 +9,10 @@
         }
     ],
     "require": {
-        "php": "^7.1.3",
-        "laravel/framework": "5.8.*",
+        "php": "^7.4",
+        "laravel/framework": "^8.0",
         "ext-intl": "*",
         "ext-json": "*"
-    },
-    "require-dev": {
-        "barryvdh/laravel-ide-helper": "^2.6",
-        "doctrine/dbal": "^2.9"
     },
     "config": {
         "optimize-autoloader": true,
@@ -25,10 +21,10 @@
     },
     "autoload": {
         "files":  [
-            "src/helpers/datetime.php",
-            "src/helpers/json.php",
-            "src/helpers/price.php",
-            "src/helpers/user.php"
+            "src/datetime.php",
+            "src/json.php",
+            "src/price.php",
+            "src/user.php"
         ]
     },
     "minimum-stability": "dev",
